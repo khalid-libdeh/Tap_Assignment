@@ -1,0 +1,179 @@
+:root {
+    --orange: #d1994f;
+    --blue: #008aaa;
+    --light-blue: #3bbadb;
+}
+
+* {
+
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    padding-inline: 5%;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+}
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 6%;
+}
+
+.nav-item {
+
+    display: flex;
+    gap: 15px;
+
+}
+
+main {
+
+    margin-top: 80px;
+
+}
+
+.welcome {
+    font-size: 18px;
+}
+
+.profile-image-wrapper {
+    width: 300px;
+    height: 270px;
+    border-radius: 0 0 0 50%;
+    box-shadow: -10px 25px 0 5px var(--light-blue);
+
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 0 0 0 50%;
+    object-fit: cover;
+}
+
+.info {
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.light-blue {
+    color: var(--light-blue) !important;
+}
+
+.orange {
+    color: var(--orange) !important;
+}
+
+.blue {
+    color: var(--blue) !important;
+}
+
+h1 {
+
+    font-size: 40px;
+}
+
+cursor-pointer {
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.button {
+    border-radius: 5px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.contained-button {
+
+    border: none;
+    background: var(--blue);
+    color: white;
+    background-color: var(--blue);
+    box-shadow: 0 5px 2px -1px #c4e0fb;
+
+}
+
+.outlined-button {
+    color: var(--blue);
+    background-color: none;
+    border: solid 2px var(--blue);
+    box-shadow: 0 3px 2px -1px #c4e0fb;
+}
+
+.hire-button {
+    width: 120px;
+}
+
+.project-button {
+    width: 180px;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3rem;
+    }
+
+    main {
+        margin-top: 150px;
+    }
+
+    .info {
+
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        flex-direction: row;
+    }
+}
